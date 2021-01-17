@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Karla;
+}
+
+header {
+  height: 5vh;
+  width: 100%;
+  padding: 20px 0;
+}
+
+header nav {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+
+header nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-weight: 700;
+  opacity: .6;
+}
+
+header nav ul button {
+  padding: .75em 2.5em;
+  outline: none;
+  background: #fff;
+  color: #2d2640 !important;
+  opacity: 2 !important;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  font-weight: 700;
+  border: 2px solid #2d2640;
+}
+
+.hero {
+  height: 75vh;
+  width: 100%;
+  background-color: #2d2640;
+  color: #fff;
+}
+
+.hero .flex-sec {
+  width: 85%;
+  margin: auto;
+  padding-top: 5em;
+}
+
+.hero .flex-sec hr {
+  width: 160px;
+  background-color: #fff;
+  font-weight: 400;
+}
+
+.hero .flex-sec .flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .flex-sec .flx .text {
+  margin-top: 3em;
+}
+
+.hero .flex-sec .flx .text h1 {
+  font-family: DM Serif Display;
+  letter-spacing: .03em;
+  font-size: 50px;
+  font-weight: 400;
+  width: 50%;
+  margin-bottom: .25em;
+}
+
+.hero .flex-sec .flx .text p {
+  line-height: 1.5;
+  width: 72.5%;
+  margin-bottom: 1.25em;
+  font-size: 16px;
+}
+
+.hero .flex-sec .flx .text button {
+  padding: .75em 2.5em;
+  outline: none;
+  background: #fff;
+  color: #2d2640 !important;
+  opacity: 2 !important;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  font-weight: 700;
+  border: 2px solid #2d2640;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white !important;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.hero .flex-sec .flx .img img {
+  height: 600px;
+  width: 510px;
+}
+
+.flex-sec-2 {
+  width: 85%;
+  margin: auto;
+  margin-top: 17em;
+}
+
+.flex-sec-2 hr {
+  width: 160px;
+  background-color: #2d2640;
+  font-weight: 400;
+}
+
+.flex-sec-2 h1 {
+  margin-top: 2em;
+  font-family: DM Serif Display;
+  letter-spacing: .03em;
+  font-size: 50px;
+  font-weight: 400;
+  width: 50%;
+  margin-bottom: 1.5em;
+  color: #2b272f;
+}
+
+.flex-sec-2 .flx {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-sec-2 .flx div {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.flex-sec-2 .flx div h2 {
+  font-family: DM Serif Display;
+  font-weight: 400;
+  color: #2b272f;
+  margin-bottom: .5em;
+}
+
+.flex-sec-2 .flx div p {
+  line-height: 1.7;
+  opacity: .8;
+}
+
+.flex-sec-2 .flx div .icon {
+  margin-bottom: 1.5em;
+}
+
+.sec {
+  width: 85%;
+  margin: auto;
+  margin-top: 12em;
+  margin-bottom: 12em;
+  background-color: #2d2640;
+  color: #fff;
+  height: 300px;
+  padding: 30px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec div {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec div .header {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.sec div .header h1 {
+  font-family: DM Serif Display;
+  letter-spacing: .03em;
+  font-size: 50px;
+  font-weight: 400;
+  width: 65%;
+  color: #fff;
+}
+
+.sec div .button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec div .button button {
+  padding: .75em 2.5em;
+  outline: none;
+  background: #fff;
+  color: #2d2640 !important;
+  opacity: 2 !important;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  font-weight: 700;
+  border: 2px solid #2d2640;
+  color: #fff !important;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #fafafa;
+  color: #2b272f;
+  padding: 50px 0;
+}
+
+footer .cont {
+  width: 85%;
+  margin: auto;
+}
+
+footer .cont nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .cont nav .logo {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+footer .cont nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .cont hr {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+footer .cont .nav2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .cont .sec-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .cont .sec-footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .cont .sec-footer div h3 {
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+footer .cont .sec-footer div ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+footer .cont .sec-footer div ul li {
+  margin-bottom: 1em;
+  color: #2d2640 !important;
+  font-weight: 700;
+  letter-spacing: .025em;
+}
+/*# sourceMappingURL=style.css.map */

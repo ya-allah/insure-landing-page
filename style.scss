@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Karla;
+}
+
+$main-color: hsl(256, 26%, 20%); 
+
+@mixin button {
+    padding: .75em 2.5em;
+    outline: none;
+    background: #fff;
+    color: $main-color !important;
+    opacity: 2 !important;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    font-weight: 700;
+    border: 2px solid $main-color;
+}
+
+
+header {
+    height: 5vh;
+    width: 100%;
+    padding: 20px 0;
+    nav {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        .logo {
+            flex: 1.5;
+        }
+        ul {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            li {
+                text-transform: uppercase;
+                letter-spacing: .02em;
+                font-weight: 700;
+                opacity: .6;
+            }
+            button {
+                @include button;
+            }
+        }
+    }
+}
+
+.hero {
+    height: 75vh;
+    width: 100%;
+    background-color: $main-color;
+    color: #fff;
+    .flex-sec {
+        width: 85%;
+        margin: auto;
+        padding-top: 5em;
+        hr {
+            width: 160px;
+            background-color: #fff;
+            font-weight: 400;
+        }
+        .flx {
+            display: flex;
+            .text {
+                margin-top: 3em;
+                h1 {
+                    font-family: DM Serif Display;
+                    letter-spacing: .03em;
+                    font-size: 50px;
+                    font-weight: 400;
+                    width: 50%;
+                    margin-bottom: .25em;
+                }
+                p {
+                    line-height: 1.5;
+                    width: 72.5%;
+                    margin-bottom: 1.25em;
+                    font-size: 16px;
+                }
+                button {
+                    @include button();
+                    background-color: transparent;
+                    border: 2px solid white;
+                    color: white !important;
+                    font-weight: 400;
+                    letter-spacing: 0.05em;
+                }
+            }
+            .img {
+                img {
+                    height: 600px;
+                    width: 510px;
+                }
+            }
+        }
+    }
+}
+
+.flex-sec-2 {
+    width: 85%;
+    margin: auto;
+    margin-top: 17em;
+    hr {
+        width: 160px;
+        background-color: $main-color;
+        font-weight: 400;
+    }
+    h1 {
+        margin-top: 2em;
+        font-family: DM Serif Display;
+        letter-spacing: .03em;
+        font-size: 50px;
+        font-weight: 400;
+        width: 50%;
+        margin-bottom: 1.5em;
+        color: hsl(270, 9%, 17%);
+    }
+    .flx {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div {
+            flex-basis: 30%;
+            h2 {
+                font-family: DM Serif Display;
+                font-weight: 400;
+                color: hsl(270, 9%, 17%);
+                margin-bottom: .5em;
+            }
+            p {
+                line-height: 1.7;
+                opacity: .8;
+            }
+            .icon {
+                margin-bottom: 1.5em;
+            }
+        }
+    }
+}
+
+.sec {
+    width: 85%;
+    margin: auto;
+    margin-top: 12em;
+    margin-bottom: 12em;
+    background-color: $main-color;
+    color: #fff;
+    height: 300px;
+    padding: 30px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    div {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        .header {
+            flex: 2;
+            h1 {
+                font-family: DM Serif Display;
+                letter-spacing: .03em;
+                font-size: 50px;
+                font-weight: 400;
+                width: 65%;
+                color: #fff;
+            }
+        }
+        .button {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            button {
+                @include button();
+                color: #fff !important;
+                border: 2px solid #fff;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(270, 9%, 17%);
+    padding: 50px 0;
+    .cont {
+        width: 85%;
+        margin: auto;
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo {
+                flex: 5;
+            }
+            ul {
+                flex: 1;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        hr {
+            margin-top: 4em;
+            margin-bottom: 4em;
+
+        }
+        .nav2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .sec-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h3 {
+                    margin-bottom: 2em;
+                    text-transform: uppercase;
+                    opacity: .7;
+                }
+                ul {
+                    list-style: none;
+                    text-transform: uppercase;
+                    li {
+                        margin-bottom: 1em;
+                        color: $main-color !important;
+                        font-weight: 700;
+                        letter-spacing: .025em;
+                    }
+                }
+            }
+        }
+    }
+}
