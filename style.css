@@ -62,6 +62,13 @@ header nav ul button {
   letter-spacing: .025em;
   font-weight: 700;
   border: 2px solid #2d2640;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header nav ul button:hover {
+  color: white !important;
+  background: #2d2640;
 }
 
 .hero {
@@ -124,6 +131,13 @@ header nav ul button {
   color: white !important;
   font-weight: 400;
   letter-spacing: 0.05em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.hero .flex-sec .flx .text button:hover {
+  color: #2d2640 !important;
+  background: white;
 }
 
 .hero .flex-sec .flx .img img {
@@ -261,6 +275,13 @@ header nav ul button {
   color: #fff !important;
   border: 2px solid #fff;
   background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sec div .button button:hover {
+  color: #2d2640 !important;
+  background: white;
 }
 
 footer {
@@ -308,6 +329,10 @@ footer .cont nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .cont nav ul li {
+  cursor: pointer;
 }
 
 footer .cont hr {
@@ -371,5 +396,18 @@ footer .cont .sec-footer div ul li {
   color: #2d2640 !important;
   font-weight: 700;
   letter-spacing: .025em;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer .cont .sec-footer div ul li:hover {
+  opacity: .8;
+}
+
+@media screen and (min-width: 600px) {
+  button {
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=style.css.map */

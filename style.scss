@@ -48,6 +48,11 @@ header {
             }
             button {
                 @include button;
+                transition: .3s;
+                &:hover {
+                    color: white !important;
+                    background: $main-color;
+                }
             }
         }
     }
@@ -92,6 +97,11 @@ header {
                     color: white !important;
                     font-weight: 400;
                     letter-spacing: 0.05em;
+                    transition: .3s;
+                    &:hover {
+                        color: $main-color !important;
+                        background: white;
+                    }
                 }
             }
             .img {
@@ -185,6 +195,11 @@ header {
                 color: #fff !important;
                 border: 2px solid #fff;
                 background-color: transparent;
+                transition: .3s;
+                &:hover {
+                    color: $main-color !important;
+                    background: white;
+                }
             }
         }
     }
@@ -212,6 +227,9 @@ footer {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                li {
+                    cursor: pointer;
+                }
             }
         }
         hr {
@@ -247,9 +265,20 @@ footer {
                         color: $main-color !important;
                         font-weight: 700;
                         letter-spacing: .025em;
+                        cursor: pointer;
+                        transition: .3s;
+                        &:hover {
+                            opacity: .8;
+                        }
                     }
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    button {
+        cursor: pointer;
     }
 }
